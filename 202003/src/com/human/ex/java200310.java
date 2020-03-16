@@ -1,9 +1,8 @@
 package com.human.ex;
 
-public class javaStart {
+public class java200310 {
 
 	public static void main(String[] args) {
-		
 		java.util.Scanner sc=new java.util.Scanner(System.in);
 		
 		String stringInput="";
@@ -64,14 +63,7 @@ public class javaStart {
 		int C=(input%1000%500)/100;
 		int D=(input%1000%500%100)/50;
 		System.out.println("잔액은 천원 "+A+"개, 500원 "+B+"개, 100원 "+C+"개, 50원 "+D+"개 입니다.");
-	
-		
-	
-	
 
-		
-		
-		
 	}
 
 }
