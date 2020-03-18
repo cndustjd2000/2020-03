@@ -91,7 +91,7 @@ public class java200317 {
 		
 		System.out.println("");
 		
-		//7페이지
+		//7-4
 		int cArr[]= {1,2,3,4,5,6,7,8,9,10};
 		
 		System.out.println("이동을 원하는 숫자를 입력하세요.");
@@ -106,7 +106,7 @@ public class java200317 {
 		}
 		System.out.println(Arrays.toString(cArr));
 		
-		//8페이지
+		//7페이지
 		int a2Arr[]= {1,9,3,6,5,4,7,8,2,10};
 		int b2Arr[]= {7,8,2,5,10,1,3,6,4,9};
 		int c2Arr[]=new int[10];
@@ -119,7 +119,7 @@ public class java200317 {
 		
 		System.out.println("");
 		
-		//9페이지
+		//8페이지
 		int sArr[]=new int[5];
 		int highScore=0;
 		System.out.println("점수를 입력하세요.");
@@ -136,7 +136,7 @@ public class java200317 {
 		System.out.println("최고점수 : "+highScore);
 		
 		
-		//10페이지
+		//9-2
 		int sArr1[]=new int[5];
 		
 		int count=0;
@@ -156,9 +156,9 @@ public class java200317 {
 		}
 		System.out.println("70점 이상인 학생은 "+count+"명 입니다.");
 		
-		*/
 		
-		//11페이지
+		
+		//10-2
 		
 		double kor[]=new double[5];
 		double eng[]=new double[5];
@@ -197,6 +197,87 @@ public class java200317 {
 		System.out.println("국어 총점 : "+korSum);
 		System.out.println("영어 총점 : "+engSum);
 		System.out.println("수학 총점 : "+matSum);
+		
+		//10-3
+		System.out.println("네 자릿수의 정수를 입력하시오.");
+		int fo=Integer.parseInt(sc.nextLine());
+		
+		int a[]=new int[4];
+		
+		a[0]=fo/1000;
+		a[1]=(fo%1000)/100;
+		a[2]=(fo%100)/10;
+		a[3]=fo%10;
+		
+		for(int i=0;i<4;i++) {
+			System.out.println("a["+i+"]의 값 : "+a[i]);
+		}
+		System.out.println("역순출력 : "+a[3]+a[2]+a[1]+a[0]);
+		
+		
+		//11-1
+		int student[]=new int[16];
+		
+		System.out.println("1-출석 입력. 2-결석입력. 3-초기화. 4-출석정보 출력. 5-프로그램 종료.");
+		for(int i=0;i<student.length;i++) {
+			
+			System.out.println((i+1)+"번째 강의에 출석하셨나요? <출석은 1 출력, 결석은 0 출력>");
+			int check=Integer.parseInt(sc.nextLine());
+			
+			switch(check) {
+				case 1:
+					student[i]=1;
+					break;
+				case 2:
+					student[i]=0;
+					break;
+				case 3:
+					System.out.println("모두 출석-1 모두 결석-2");
+					int all=Integer.parseInt(sc.nextLine());
+					
+					if(all==1) {
+						for(i=0;i<student.length;i++) {
+							student[i]=1;
+						}
+						if(all==2) {
+							for(i=0;i<student.length;i++) {
+								student[i]=0;
+							}
+						}
+					}
+					break;
+				case 4:
+					for(i=0;i<student.length;i++) {
+						System.out.println(student[i]);
+					}
+					break;
+				case 5:
+					break;
+			}
+		}
+		System.out.println(Arrays.toString(student));
+		System.out.println("프로그램 종료");
+		
+		//12-3
+		int lotto[]=new int[6];
+		int lottoInput=0;
+		for(int i=0;i<lotto.length;i++) {
+			System.out.println("0~45의 로또번호를 입력하시오.");
+			lottoInput=Integer.parseInt(sc.nextLine());
+			lotto[i]=lottoInput;
+			for(int i1=0;i1<i;i1++) {
+				if(lotto[i1]==lotto[i]) {
+					System.out.println("중복된 입력입니다. 다른 값을 입력하시오.");
+					lottoInput=Integer.parseInt(sc.nextLine());
+					lotto[i]=lottoInput;
+					i1=-1;
+				}
+			}
+		}
+		System.out.println("입력한 번호 : "+Arrays.toString(lotto));
+		*/
+		
+		
 		
 	}
 
