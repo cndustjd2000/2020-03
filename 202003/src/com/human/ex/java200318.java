@@ -1,5 +1,7 @@
 package com.human.ex;
 
+import java.util.Arrays;
+
 public class java200318 {
 	public static int sum(int a, int b) {
 		int sum=0;
@@ -28,34 +30,40 @@ public class java200318 {
 		}
 		return sum;
 	}	
-	public static String triangle1(String t1) {
-		t1="*";
-		return t1;
+	public static void triangle1() {
+		System.out.println("*");
 	}
-	public static String triangle2(String t2) {
-		t2="**";
-		return t2;
+	public static void triangle2() {
+		System.out.println("**");
 	}
-	public static String triangle3(String t3) {
-		t3="***";
-		return t3;
+	public static void triangle3() {
+		System.out.println("***");
 	}
-	public static String card1(String name) {
-		name="홍길동";
-		return name;
+	public static void card(String name, String pNum, String from) {
+	name(name);
+	pnum(pNum);
+	from(from);
 	}
-	public static int card2(int age) {
-		age=23;
-		return age;
+
+	public static void name(String name) {
+	System.out.print("이름 : ");
+	System.out.println(name);
 	}
-	public static String card3(String home) {
-		home="천안";
-		return home;
+
+	public static void pnum(String pNum) {
+	System.out.print("전화번호 : ");
+	System.out.println(pNum);
 	}
+
+	public static void from(String from) {
+	System.out.print("사는곳 : ");
+	System.out.println(from);
+	}
+		
  	public static int sum1(int a,int b) {
-		int sum=0;
-		if(a>b) {
-			int temp; temp=a; a=b; b=temp;//>>b가 큰수
+	int sum=0;
+	if(a>b) {
+		int temp; temp=a; a=b; b=temp;//>>b가 큰수
 		}
 		for(int i=a;i<=b;i++) {
 			sum=sum+i;
@@ -73,6 +81,32 @@ public class java200318 {
 		return a;
 	}
 
+	
+	public static int intFunc(int a) {
+		return a;
+	}
+	
+	public static double douFunc(double a) {
+		return a;
+	}
+	
+	public static String strFunc(String a) {
+		return a;
+	}
+	
+	
+	
+	public static void catFunc(int a, double b, String c) {
+		System.out.println("나이 : "+a+", 몸무게 : "+b+", 이름 : "+c);
+	}
+	public static int[] intArrFunc(int arr[]) {
+		return arr;
+	}
+	public static int[] catobjectFunc(int arr[], String st) {
+		System.out.println("나이 : "+arr[0]+"몸무게 : "+arr[1]+"이름 : "+st);
+	}
+	
+	
 	
 	public static void main(String[] args) {
 		//문제 1
@@ -106,23 +140,33 @@ public class java200318 {
 		
 		
 		//문제1
-		System.out.println(triangle1("*"));
-		System.out.println(triangle2("**"));
-		System.out.println(triangle3("***"));
+		triangle1();
+		triangle2();
+		triangle3();
 		
 		//문제2
-		System.out.println("이름 : "+card1("ㅁ"));
-		System.out.println("나이 : "+card2(2));
-		System.out.println("거주지 : "+card3("ㅁ"));		
+		card("홍길동","010-1234-5678","천안");
 		
 		//문제3
 		System.out.println(sum1(1,10));
 		
 		//문제4
+		System.out.println("월\t화\t수\t목\t금\t토\t일");
 		System.out.println(month(31));
 		
 		//문제5
+		int i=intFunc(3);
+		double d=douFunc(5.3);
+		String s=strFunc("고1");
 		
+		int intArrFunc[]= {a,(int)b};
+		System.out.println(Arrays.toString(intArrFunc));
+		
+		catFunc(a,b,s);
+		
+		catobjectFunc(intArrFunc,s);
+		
+		//
 		
 		
 		

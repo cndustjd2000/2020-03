@@ -275,10 +275,33 @@ public class java200317 {
 			}
 		}
 		System.out.println("입력한 번호 : "+Arrays.toString(lotto));
+		
+		int a[]=new int[50];
+		int b[]=new int[50];
+		
+		for(int i=0;i<a.length;i++) {
+			a[i]=i+1;
+			b[i]=a[i];
+		}
+		
+		
+		System.out.println("숫자 입력 (입력한 숫자의 배수는 0으로 표시)");
+		int input=Integer.parseInt(sc.nextLine());
+		
+		for(int i=0;i<50;i++) {
+			if(b[i]%input==0) {
+				b[i]=0;
+			}
+		}
+		System.out.println(Arrays.toString(a));
+		for(int i=0;i<50;i++) {
+		if(i%10==0) {
+		System.out.println("\n");
+		}
+		System.out.print(" "+a[i]);
+		}
+		System.out.println(Arrays.toString(b));
 		*/
-		
-		
-		
 	}
 
 }
