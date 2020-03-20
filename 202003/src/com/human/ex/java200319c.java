@@ -14,7 +14,7 @@ public class java200319c {
 		
 		//369게임  10에 만세
 		
-		/*
+		
 		for(int i=1;i<100;i++) {
 			if(i%10==0) {
 				System.out.println("만세");
@@ -31,7 +31,7 @@ public class java200319c {
 				System.out.println(i);
 			}
 		}
-		*/
+		
 		
 		System.out.println(total);
 		System.out.println(java200319c.total);//이게 원래 맞는 표현
