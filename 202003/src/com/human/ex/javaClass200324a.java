@@ -8,25 +8,25 @@ class phone{
 	public String msg;
 	public phone(String number,String name,String model) {
 		this.number=number; this.name=name; this.model=model;
-		System.out.println("ÇÚµåÆù¹øÈ£ : "+number+", ÀÌ¸§ : "+name+", ¸ğµ¨ : "+model);
+		System.out.println("í•¸ë“œí°ë²ˆí˜¸ : "+number+", ì´ë¦„ : "+name+", ëª¨ë¸ : "+model);
 	}
 	public void call(phone a) {
 		System.out.println(a.number);
-		System.out.println(a.name+"¿¡°Ô ÀüÈ­ ¿¬°á Áß..");
-		System.out.println("ÀüÈ­ ¿¬°á¿¡ ½ÇÆĞÇÏ¿´½À´Ï´Ù. ³²±â½Ç ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println(a.name+"ì—ê²Œ ì „í™” ì—°ê²° ì¤‘..");
+		System.out.println("ì „í™” ì—°ê²°ì— ì‹¤íŒ¨í•˜ì˜€ìŠµë‹ˆë‹¤. ë‚¨ê¸°ì‹¤ ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 	}
 	public void sendmsg(phone p,String s) {
 		p.msg=s;
 		System.out.println(p.number);
-		System.out.println(p.name+"¿¡°Ô ¹®ÀÚ¸¦ º¸³Â½À´Ï´Ù.");
+		System.out.println(p.name+"ì—ê²Œ ë¬¸ìë¥¼ ë³´ëƒˆìŠµë‹ˆë‹¤.");
 	}
 	public void checkmsg(phone p) {
 		System.out.println(p.number);
-		System.out.println(p.name+"¿¡°Ô¼­ ¿Â ¹®ÀÚ¸Ş¼¼Áö ÀÔ´Ï´Ù.");
+		System.out.println(p.name+"ì—ê²Œì„œ ì˜¨ ë¬¸ìë©”ì„¸ì§€ ì…ë‹ˆë‹¤.");
 		System.out.println(msg);
 	}
 	public void info() {
-		System.out.println("ÇÚµåÆù¹øÈ£ : "+this.number+", ÀÌ¸§ : "+this.name+", ¸ğµ¨ : "+this.model);
+		System.out.println("í•¸ë“œí°ë²ˆí˜¸ : "+this.number+", ì´ë¦„ : "+this.name+", ëª¨ë¸ : "+this.model);
 	}	
 }
 
@@ -37,14 +37,14 @@ class TV{
 	public int year;
 	public TV(int size, String model, String name) {
 		this.size=size; this.model=model; this.name=name;
-		System.out.println("»çÀÌÁî : "+size+", ¸ğµ¨ : "+model+", ÀÌ¸§ : "+name);
+		System.out.println("ì‚¬ì´ì¦ˆ : "+size+", ëª¨ë¸ : "+model+", ì´ë¦„ : "+name);
 	}
 	public void made(int a) {
 		year=a;
-		System.out.println(model+name+"ÀÇ »ı»ê³âµµ : "+year);
+		System.out.println(model+name+"ì˜ ìƒì‚°ë…„ë„ : "+year);
 	}
 	public void tvInfo() {
-		System.out.println("»çÀÌÁî : "+this.size+", ¸ğµ¨ : "+this.model+", ÀÌ¸§ : "+this.name);
+		System.out.println("ì‚¬ì´ì¦ˆ : "+this.size+", ëª¨ë¸ : "+this.model+", ì´ë¦„ : "+this.name);
 	}
 }
 
@@ -54,12 +54,12 @@ class elevator{
 	public int floor;
 	public elevator(int weight,int people, int floor) {
 		this.weight=weight; this.people=people; this.floor=floor;
-		System.out.println("¿¤¸®º£ÀÌÅÍ Á¤º¸");
-		System.out.println("¹«°Ô : "+weight+", ÀÎ¿ø¼ö : "+people+", Ãş¼ö : "+floor);
+		System.out.println("ì—˜ë¦¬ë² ì´í„° ì •ë³´");
+		System.out.println("ë¬´ê²Œ : "+weight+", ì¸ì›ìˆ˜ : "+people+", ì¸µìˆ˜ : "+floor);
 	}
 	public void move(int a) {
 		floor=a;
-		System.out.println("ÀÌµ¿À» ¿øÇÏ½Ã´Â Ãş¼ö´Â "+floor+"Ãş ÀÔ´Ï´Ù.");
+		System.out.println("ì´ë™ì„ ì›í•˜ì‹œëŠ” ì¸µìˆ˜ëŠ” "+floor+"ì¸µ ì…ë‹ˆë‹¤.");
 	}	
 }
 
@@ -69,12 +69,12 @@ class game{
 	public int pay;
 	public game(String name, String kind, int pay) {
 		this.name=name; this.kind=kind; this.pay=pay;
-		System.out.println("°ÔÀÓÁ¤º¸");
-		System.out.println("°ÔÀÓÀÌ¸§ : "+name+", °ÔÀÓÁ¾·ù : "+kind+", °¡°İ : "+pay);
+		System.out.println("ê²Œì„ì •ë³´");
+		System.out.println("ê²Œì„ì´ë¦„ : "+name+", ê²Œì„ì¢…ë¥˜ : "+kind+", ê°€ê²© : "+pay);
 	}
 	public void gamePlay(int a) {
-		System.out.println("¼±ÅÃÇÑ °ÔÀÓÀÇ ÀÌ¸§ : "+this.name);
-		System.out.println("ÇÃ·¹ÀÌ ÇÑ ½Ã°£ : "+a);
+		System.out.println("ì„ íƒí•œ ê²Œì„ì˜ ì´ë¦„ : "+this.name);
+		System.out.println("í”Œë ˆì´ í•œ ì‹œê°„ : "+a);
 	}
 }
 
@@ -87,25 +87,25 @@ public class javaClass200324a {
 		
 
 		
-		//¿ì¸® ÁÖº¯¿¡ ÀÖ´Â »ç¹°À» °´Ã¼·Î ¸¸µé¾î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ¸¸µé¾î¶ó
-		//ÇÚµåÆù, TV, ¿¤¸®º£ÀÌÅÍ º»ÀÎÀÌ ÇÏ³ª Ãß°¡
+		//ìš°ë¦¬ ì£¼ë³€ì— ìˆëŠ” ì‚¬ë¬¼ì„ ê°ì²´ë¡œ ë§Œë“¤ì–´ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ë§Œë“¤ì–´ë¼
+		//í•¸ë“œí°, TV, ì—˜ë¦¬ë² ì´í„° ë³¸ì¸ì´ í•˜ë‚˜ ì¶”ê°€
 		
-		//ÇÚµåÆù¹øÈ£, ÀÌ¸§, Á¦Ç°¸í
-		//ÀüÈ­°É±â, ¸Ş¼¼Áö º¸³»±â, ÇÚµåÆù Á¤º¸ Ãâ·Â
-		//¸Ş¼¼Áö
-		//º»ÀÎ ÇÚµåÆù¹øÈ£, »ó´ë¹æ ÇÚµåÆù ¹øÈ£, º¸³½ ¸Å¼¼Áö ½Ã°£
+		//í•¸ë“œí°ë²ˆí˜¸, ì´ë¦„, ì œí’ˆëª…
+		//ì „í™”ê±¸ê¸°, ë©”ì„¸ì§€ ë³´ë‚´ê¸°, í•¸ë“œí° ì •ë³´ ì¶œë ¥
+		//ë©”ì„¸ì§€
+		//ë³¸ì¸ í•¸ë“œí°ë²ˆí˜¸, ìƒëŒ€ë°© í•¸ë“œí° ë²ˆí˜¸, ë³´ë‚¸ ë§¤ì„¸ì§€ ì‹œê°„
 		
 		java.util.Scanner sc=new java.util.Scanner(System.in);
 		
-		/*phone p1=new phone("010-1234-5678","È«±æµ¿","¾ÆÀÌÆù");
-		phone p2=new phone("010-8765-4321","±è¾Æ¹«°³","»ï¼º");
+		phone p1=new phone("010-1234-5678","í™ê¸¸ë™","ì•„ì´í°");
+		phone p2=new phone("010-8765-4321","ê¹€ì•„ë¬´ê°œ","ì‚¼ì„±");
 		
 		p1.call(p2);
 		
 		p1.sendmsg(p2,sc.nextLine());
-		p2.checkmsg(p1);*/
+		p2.checkmsg(p1);
 		
-		TV t1=new TV(70,"»ï¼º","QLED");
+		TV t1=new TV(70,"ì‚¼ì„±","QLED");
 		t1.made(2020);
 		System.out.println("");
 		TV t2=new TV(60,"LG","LED");
