@@ -101,10 +101,11 @@ public class java200318 {
 	}
 	public static int[] intArrFunc(int arr[]) {
 		return arr;
+		
 	}
-	public static int[] catobjectFunc(int arr[], String st) {
+	/*public static int[] catobjectFunc(int arr[], String st) {
 		System.out.println("나이 : "+arr[0]+"몸무게 : "+arr[1]+"이름 : "+st);
-	}
+	}*/
 	
 	
 	
@@ -164,7 +165,7 @@ public class java200318 {
 		
 		catFunc(a,b,s);
 		
-		catobjectFunc(intArrFunc,s);
+		/*catobjectFunc(intArrFunc,s);*/
 		
 		//
 		

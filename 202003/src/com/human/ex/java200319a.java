@@ -1,5 +1,5 @@
 package com.human.ex;
-class Cat{
+class Cat1{
 	String name;
 	int age;
 }

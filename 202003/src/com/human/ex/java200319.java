@@ -91,7 +91,7 @@ public class java200319 {
 
 		//override 상속과 관련된 메소드 재정의.
 		
-		/*
+		
 		//문제 5
 		int sum=funcAll(10,20);
 		double c=15.0;
@@ -195,17 +195,17 @@ public class java200319 {
 		System.out.print("");
 		System.out.print("홀수의 합 : ");
 		a2Num();
-		*/
+		
 		
 		//17페이지
-		int input=0;
+		int input1=0;
 		int save=0;
 		int draw=0;
 		
-		while(!(input==-1)){
+		while(!(input1==-1)){
 			System.out.println("메뉴를 선택하세요 1.저축 2.예금인출(종료는 -1):");
-			input=Integer.parseInt(sc.nextLine());
-			switch(input) {
+			input1=Integer.parseInt(sc.nextLine());
+			switch(input1) {
 				case 1:
 				System.out.println("얼마를 저축하시겠습니까?");
 				save=Integer.parseInt(sc.nextLine());
